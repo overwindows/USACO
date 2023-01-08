@@ -7,7 +7,6 @@ from functools import lru_cache
 import sys
 
 
-
 def main():
 
     sys.setrecursionlimit(20000)
@@ -99,7 +98,7 @@ def main():
 
     dfs(init, C)
     outputs = []
-    
+
     with open('lamps.out', 'w') as fout:
         if len(ret) == 0:
             fout.write('IMPOSSIBLE\n')
@@ -112,7 +111,7 @@ def main():
             for i in range(N - len(res)):
                 res.append(0)
             outputs.append(''.join([str(c) for c in res])+'\n')
-            
+
         outputs.sort()
         fout.writelines(outputs)
 
