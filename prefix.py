@@ -21,7 +21,7 @@ def main():
             else:
                 sequences.append(line.strip())
     set_primitives = set(primitives)
-    max_len_primitive = len(max(primitives, key=len))
+    # max_len_primitive = len(max(primitives, key=len))
 
     # @lru_cache(maxsize=sys.maxsize)
     # def longest_prefix(s: str) -> int:
